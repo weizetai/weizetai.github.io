@@ -383,7 +383,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                WEIZET.AIの博客
+                 
                 
             </div>
 
@@ -415,8 +415,12 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getMinutes() + '.jpg';
+    // 每天切换 banner 图.  Switch banner image every day.    getDay() 获取0~6对应0~6的图片名
+    // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+
+    // 每小时切换 banner 图.   8张图   故需要轮换三次  %9
+    // var bannerUrl = "/medias/banner/" + new Date().getHours()%9 + '.jpg';
+    var bannerUrl = "/medias/banner/" + new Date().getMinutes()%6 + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
