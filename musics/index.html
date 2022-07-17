@@ -421,6 +421,7 @@
 
     // 每小时切换 banner 图.   8张图   故需要轮换三次  %9
     // var bannerUrl = "/medias/banner/" + new Date().getHours()%9 + '.jpg';
+    // 每分钟切换 banner 图.   6张图   故需要轮换10次  %6
     var bannerUrl = "/medias/banner/" + new Date().getMinutes()%6 + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
