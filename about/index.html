@@ -439,13 +439,23 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/">4</a></span>
+    <span class="count"><a href="/">13</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">3</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">8</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                     </div>
@@ -459,13 +469,23 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/">4</a></span>
+    <span class="count"><a href="/">13</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
+<div class="statis">
+    <span class="count"><a href="/categories">3</a></span>
+    <span class="name">分类</span>
+</div>
 
+
+
+<div class="statis">
+    <span class="count"><a href="/tags">8</a></span>
+    <span class="name">标签</span>
+</div>
 
 
                                 </div>
@@ -607,7 +627,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,0,4],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,13],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -649,7 +669,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [],
+                data: [{"name":"前端","value":5},{"name":"面试","value":1},{"name":"English","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -673,7 +693,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: []
+                data: ["前端学习","每日一句","测试","个人博客配置","前端面经","简历","面试","markdown"]
             }
         ],
         yAxis: [
@@ -686,7 +706,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [],
+                data: [2,2,1,1,1,1,1,1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -844,6 +864,54 @@
         <div class="sub-title center-align"><i class="fa fa-book"></i>&nbsp;&nbsp;其他技能</div>
         <div class="tag-chips center-align">
             
+            
+            <a href="/tags/%E6%B5%8B%E8%AF%95/">
+                <span class="chip center-align waves-effect waves-light chip-default">测试</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/">
+                <span class="chip center-align waves-effect waves-light chip-default">个人博客配置</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E7%BB%8F/">
+                <span class="chip center-align waves-effect waves-light chip-default">前端面经</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0/">
+                <span class="chip center-align waves-effect waves-light chip-default">前端学习</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E7%AE%80%E5%8E%86/">
+                <span class="chip center-align waves-effect waves-light chip-default">简历</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E9%9D%A2%E8%AF%95/">
+                <span class="chip center-align waves-effect waves-light chip-default">面试</span>
+            </a>
+            
+            
+            
+            <a href="/tags/markdown/">
+                <span class="chip center-align waves-effect waves-light chip-default">markdown</span>
+            </a>
+            
+            
+            
+            <a href="/tags/%E6%AF%8F%E6%97%A5%E4%B8%80%E5%8F%A5/">
+                <span class="chip center-align waves-effect waves-light chip-default">每日一句</span>
+            </a>
+            
+            
         </div>
     </div>
     
@@ -868,14 +936,14 @@
         </div>
         
         <div class="photo col s12 m6 l4" data-aos="fade-up">
-            <div class="img-item" data-src="/medias/featureimages/9.jpg">
-                <img src="/medias/featureimages/9.jpg" class="responsive-img">
+            <div class="img-item" data-src="/medias/featureimages/4.jpg">
+                <img src="/medias/featureimages/4.jpg" class="responsive-img">
             </div>
         </div>
         
         <div class="photo col s12 m6 l4" data-aos="fade-up">
-            <div class="img-item" data-src="/medias/featureimages/4.jpg">
-                <img src="/medias/featureimages/4.jpg" class="responsive-img">
+            <div class="img-item" data-src="/medias/featureimages/9.jpg">
+                <img src="/medias/featureimages/9.jpg" class="responsive-img">
             </div>
         </div>
         
@@ -1170,6 +1238,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.8}});</script></body>
 
 </html>
