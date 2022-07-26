@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  background: url(./0.jpg)  no-repeat center top;
+  background-size: cover;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h2 {
+  margin: 0;
+  font-size: 12px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+input {
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  color: inherit;
+  outline: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+头部样式
+.page-top {
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.page-content {
+  width: 50%;
+  margin: 0 auto;
+}
+.page-content h2 {
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.main {
+  width: 50%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.task-input {
+  width: 99%;
+  height: 30px;
+  outline: 0;
+  border: 1px solid #ccc;
+}
+.task-count {
+  display: flex;
+  margin: 10px 0;
+}
+.task-count li {
+  padding-left: 10px;
+  flex: 1;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+.task-count li:nth-child(1) {
+  padding: 5px 0 0 10px;
+}
+.action {
+  text-align: center;
+  display: flex;
+}
+.action a {
+  margin: 0 10px;
+  flex: 1;
+  padding: 5px 0;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+}
+.action a:nth-child(3) {
+  margin-right: 0;
+}
+.active {
+  border-bottom: 2px solid white;
+}
+.tasks, .tasks-input {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.no-task-tip {
+  padding: 10px 0 10px 10px;
+  display: block;
+  border-bottom: 1px solid #ededed;
+  color: rgba(255,255,255, 0.8);
+}
+.big-title {
+  color: rgba(255, 255, 255, 0.9);
+}
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+.todo-list li {
+  position: relative;
+  font-size: 16px;
+  color: white;
+  border-left: 5px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+.todo-list li:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.todo-list li.editing {
+  border-bottom: 0;
+  padding: 0;
+}
+.todo-list li.editing .edit {
+  display: block;
+  padding: 13px 17px 12px 17px;
+  margin: 0 0 0 43px;
+}
+.todo-list li.editing .view {
+  display: none;
+}
+.toggle {
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 2px;
+  left: 15px;
+  bottom: 0;
+  margin: auto 0;
+  cursor: pointer;
+}
+.todo-list li label {
+  white-space: pre-line;
+  word-break: break-all;
+  padding: 15px 60px 15px 15px;
+  margin-left: 45px;
+  display: block;
+  line-height: 1.2;
+  transition: color 0.4s;
+}
+.todo-list li.completed label {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+.todo-list li .destroy {
+  display: none;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  bottom: 10px;
+  margin: auto 0;
+  cursor: pointer;
+  font-size: 28px;
+  color: #cc9a9a;
+  transition: color 0.2s ease-out;
+}
+.todo-list li .destroy:hover {
+  color: #af5b5e;
+}
+.todo-list li .destroy:after {
+  content: "×";
+}
+.todo-list li:hover .destroy {
+  display: block;
+}
+.todo-list li .edit {
+  display: none;
+}
+.todo-list li.editing:last-child {
+  margin-bottom: -1px;
+}
