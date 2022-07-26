@@ -68,7 +68,7 @@
     <a href="" class="waves-effect waves-light">
 
       
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      <i class="fas fa-book" style="zoom: 0.6;"></i>
       
       <span>文章</span>
       <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
@@ -110,7 +110,7 @@
     
     <a href="/todolist" class="waves-effect waves-light">
       
-      <i class="fas" style="zoom: 0.6;"></i>
+      <i class="fas fa-light fa-square-pen" style="zoom: 0.6;"></i>
       
       <span>todoList</span>
     </a>
@@ -144,9 +144,9 @@
     <a href="/friends" class="waves-effect waves-light">
 
       
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      <i class="fas fa-light fa-paperclip" style="zoom: 0.6;"></i>
       
-      <span>友情链接</span>
+      <span>website</span>
       <i class="fas fa-chevron-down" aria-hidden="true" style="zoom: 0.6;"></i>
     </a>
     <ul class="sub-nav menus_item_child ">
@@ -159,9 +159,44 @@
       </li>
       
       <li>
+        <a target="_blank" rel="noopener" href="https://www.bilibili.com/">
+          
+          <span>bilibili</span>
+        </a>
+      </li>
+      
+      <li>
         <a target="_blank" rel="noopener" href="https://www.csdn.net/">
           
           <span>CSDN</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.nowcoder.com/">
+          
+          <span>牛客网</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="https://juejin.cn/">
+          
+          <span>稀土掘金</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="https://github.com/">
+          
+          <span>Github</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="https://gitee.com/">
+          
+          <span>Gitee</span>
         </a>
       </li>
       
@@ -242,7 +277,7 @@
 	  
 		<a href="javascript:;">
 			
-				<i class="fa-fw fas fa-address-book"></i>
+				<i class="fa-fw fas fa-book"></i>
 			
 			文章
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
@@ -287,7 +322,7 @@
 	  
 		<a href="/todolist" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas"></i>
+			    <i class="fa-fw fas fa-light fa-square-pen"></i>
 			
 			todoList
 		</a>
@@ -320,9 +355,9 @@
 	  
 		<a href="javascript:;">
 			
-				<i class="fa-fw fas fa-address-book"></i>
+				<i class="fa-fw fas fa-light fa-paperclip"></i>
 			
-			友情链接
+			website
 			<span class="m-icon"><i class="fas fa-chevron-right"></i></span>
 		</a>
             <ul  style="background:  ;" >
@@ -337,9 +372,49 @@
               
                 <li>
 
+                  <a target="_blank" rel="noopener" href="https://www.bilibili.com/ " style="margin-left:75px">
+				  
+		          <span>bilibili</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a target="_blank" rel="noopener" href="https://www.csdn.net/ " style="margin-left:75px">
 				  
 		          <span>CSDN</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="https://www.nowcoder.com/ " style="margin-left:75px">
+				  
+		          <span>牛客网</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="https://juejin.cn/ " style="margin-left:75px">
+				  
+		          <span>稀土掘金</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="https://github.com/ " style="margin-left:75px">
+				  
+		          <span>Github</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a target="_blank" rel="noopener" href="https://gitee.com/ " style="margin-left:75px">
+				  
+		          <span>Gitee</span>
                   </a>
                 </li>
               
@@ -614,10 +689,25 @@
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.3k
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    20 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -903,6 +993,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: null,
+        id: '2022-07-20T23-16-18',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
 
     
 
@@ -1152,6 +1269,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">10.5k</span>
             
             
             
