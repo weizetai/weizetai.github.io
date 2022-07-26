@@ -2266,16 +2266,16 @@ body.DarkMode .theme-btn:hover {
     color: #428bca;
 }
 .post-container .note.success {
-    border-left-color: #5cb85c;
+    border-left-color: #18097b;
 }
 .post-container .note.success h2, .post-container .note.success h3, .post-container .note.success h4, .post-container .note.success h5, .post-container .note.success h6 {
-    color: #5cb85c;
+    color: #18097b;
 }
 .post-container .note.success:not(.no-icon)::before {
     content:'\f058';
     font-family:'Font Awesome 5 Free';
     font-weight: 900;
-    color: #5cb85c;
+    color: #18097b;
 }
 .post-container .note.warning {
     border-left-color: #f0ad4e;

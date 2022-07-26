@@ -502,7 +502,7 @@
     }
 
     .github-corner svg {
-        color: #0f9d58;
+        color: #0b1c43;
         fill: #fff;
         height: 64px;
         width: 64px;
@@ -625,27 +625,32 @@
     .aplayer .aplayer-lrc p.aplayer-lrc-current {
         
         font-size: 15px;
-        color: #42b983;
+        /* color: #42b983; */
+        color: #797cba;
     }
 
     
 </style>
-<div class="">
+<div class="music-player">
+    
+        <div class="title center-align">
+            <i class="fa fa-music"></i>&nbsp;&nbsp;听听音乐
+        </div>
     
     <div class="row">
         <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
+                   server="tencent"
                    type="playlist"
-                   id="1957771151"
-                   fixed='true'
-                   autoplay='false'
+                   id="1776127550"
+                   fixed='false'
+                   autoplay='true'
                    theme='#42b983'
                    loop='all'
                    order='random'
                    preload='auto'
                    volume='0.7'
                    listMaxHeight='525px'
-                   list-folded='true'
+                   list-folded='false'
         >
         </meting-js>
     </div>
