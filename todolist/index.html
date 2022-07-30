@@ -226,10 +226,10 @@
   </head>
   <body>
     <div class="page-top">
-      <button class="goBack" @click="goback()">
+      <a href="/" class="goBack">
         <i class="fa fa-home"></i>
         <h2>首页</h2>
-      </button>
+      </a>
       <!-- <div class="goBack" @click="back()">
         
       </div> -->
@@ -362,10 +362,6 @@
             item.title = this.beforeTitle;
             this.beforeTitle = "";
             this.edtorTodos = "";
-          },
-          goback(){
-            // 返回首页
-            this.$router.push('/')
           }
         },
         directives: {
