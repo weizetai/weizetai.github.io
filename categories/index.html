@@ -660,20 +660,20 @@
                 
                 
                 
-                <a href="/categories/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/" title="博客配置: 2">
+                <a href="/categories/%E5%89%8D%E7%AB%AF/" title="前端: 6">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">博客配置
-                        <span class="tag-length">2</span>
+                            style="background-color: #F9EBEA;">前端
+                        <span class="tag-length">6</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%89%8D%E7%AB%AF/" title="前端: 6">
+                <a href="/categories/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/" title="博客配置: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">前端
-                        <span class="tag-length">6</span>
+                            style="background-color: #F5EEF8;">博客配置
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -687,11 +687,11 @@
                 </a>
                 
                 
-                <a href="/categories/English/" title="English: 11">
+                <a href="/categories/English/" title="English: 13">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #E8F8F5;">English
-                        <span class="tag-length">11</span>
+                        <span class="tag-length">13</span>
                     </span>
                 </a>
                 
@@ -700,6 +700,15 @@
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             style="background-color: #FEF9E7;">前端面试
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/categories/%E5%88%B7%E9%A2%98/" title="刷题: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            style="background-color: #F8F9F9;">刷题
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -747,7 +756,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"博客配置","max":12},{"name":"前端","max":12},{"name":"面试","max":12},{"name":"English","max":12},{"name":"前端面试","max":12}],
+            indicator: [{"name":"前端","max":14},{"name":"博客配置","max":14},{"name":"面试","max":14},{"name":"English","max":14},{"name":"前端面试","max":14},{"name":"刷题","max":14}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -758,7 +767,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [2,6,1,11,1],
+                    value : [6,2,1,13,1,1],
                     name : '文章分类数量'
                 }
             ]
@@ -833,7 +842,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">11.8k</span>
+                class="white-color">13.2k</span>
             
             
             
@@ -1020,6 +1029,14 @@ $(function () {
     
 
     <!-- 雪花特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/snow.js"><\/script>');
+            }
+        </script>
     
 
     <!-- 鼠标星星特效 -->
@@ -1070,7 +1087,13 @@ $(function () {
     
 
     
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
 
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
     
 
     
