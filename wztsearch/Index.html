@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="WZT的网页导航页面"/>
+		<meta name="Keywords" content="网页导航"/>
+		<title>WZT Space</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="./iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/wztIndex.css"/>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+		<script src="./js/animate.js"></script>
+		<script src="./js/wztindex.js"></script>
+		
+	</head>
+	<body>
+		<!-- 背景壁纸 -->
+		<ul class="picture">
+			<li><img src="image/1.jpg"></li>
+			<li><img src="image/2.jpg"></li>
+			<li><img src="image/3.jpg"></li>
+			<li><img src="image/4.jpg"></li>
+			<li><img src="image/5.jpg" ></li>
+			<li><img src="./image/6.jpeg" ></li>
+			<li><img src="./image/7.jpeg" ></li>
+			<li><img src="./image/8.jpeg" ></li>
+			<li><img src="./image/9.jpeg" ></li>
+			<li><img src="./image/10.jpeg" ></li>
+			<li><img src="./image/11.jpeg" ></li>
+			<li><img src="./image/12.jpeg" ></li>
+			<li><img src="./image/13.jpeg" ></li>
+			<li><img src="./image/14.jpeg" ></li>
+			<li><img src="./image/15.jpeg" ></li>
+			<li><img src="./image/16.jpeg" ></li>
+			<li><img src="./image/17.jpeg" ></li>
+			<li><img src="./image/18.jpeg" ></li>			
+		</ul>
+		
+		
+		
+	
+		<!-- 搜索框 -->
+		<div id="search">
+			<div class="searchBox">
+				<input class="search-txt" type='text' id='inp' v-model="content" @keyup.enter="openUrl"/>		
+				<div class="btn"  @click="openUrl">
+					<input class="search-btn" type='button' id='btn'/>
+					<i class="iconfont icon-BasicIcons-all-8"></i>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script>
+			var search = new Vue({
+				el:"#search",
+				data:{
+					url:"http://www.baidu.com/s?ie=UTF-8&wd=",
+					content:""
+
+				},
+				methods:{
+					openUrl:function(){
+						this.url+=this.content;
+						window.open(this.url);
+					}
+				}
+			})
+		</script>
+	
+		
+		<!-- 轮播图 -->
+		<div class="M"> 
+			<div class="focusMrfz fl">
+				<!-- 左侧按钮 -->
+				<a href="javascript:;" class="arrow-l"><</a>
+				
+				<!-- 右侧按钮 -->
+				<a href="javascript:;" class="arrow-r">></a>
+				
+				<!-- 人物图片 -->
+				<ul>
+					<li><img src="image/377676.png" ></li>
+					<li><img src="image/377685.png" ></li>
+					<li><img src="image/377689.png" ></li>
+					<li><img src="image/陈.png" ></li>
+				</ul>
+				
+				<!-- 小圆圈 -->
+				<ol class="circle">
+					
+				</ol>
+				
+			</div>
+		</div>
+		
+
+		<!-- wzt记事本 -->
+
+
+		<!-- 主体区域 -->
+		<div class="todobox">
+			<section id="todoapp">
+				<!-- 输入框 -->
+				<header class="header">
+				  <input  @keyup.enter="add" v-model="inputValue" autofocus="autofocus" autocomplete="off" placeholder="请输入任务"
+					class="new-todo" />
+				</header>
+				<!-- 列表区域 -->
+				<section class="main">
+				  <ul class="todo-list">
+					<li class="todo" v-for="(item,index) in todoList">
+					  <div class="view">
+						<span class="index">{{ index+1 }}.</span>
+						<label>{{item}}</label>
+						<button class="destroy" @click="remove(index)"></button>
+					  </div>
+					</li>
+				  </ul>
+				</section>
+				<!-- 统计和清空 -->
+				<footer class="footer" v-show="todoList.length!=0">
+				  <span class="todo-count" >
+					<strong>{{ todoList.length }}</strong> items left
+				  </span>
+				  <button class="clear-completed" @click="clearAll">
+					Clear
+				  </button>
+				</footer>
+			  </section>
+			  <!-- 底部 -->
+			  <footer class="info">
+				<p>
+				  <a href="http://www.itheima.com/"><img src="./img/black.png" alt="" /></a>
+				</p>
+			  </footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script>
+			const todoapp = new Vue({
+				el:"#todoapp",
+				data:{
+				todoList:["吃饭","睡觉","学习"],
+				inputValue:"糟糕的坚持>>轻易的放弃！"
+				},
+				methods:{
+				add:function(){
+					this.todoList.push(this.inputValue);
+				},
+				remove:function(index){
+					console.log(index);
+					this.todoList.splice(index,1);   //splice 根据索引删除对应的元素  1指一次删一个
+				},
+				clearAll:function(){
+					this.todoList = [];
+				}
+			}
+		})
+		</script>
+		
+		
+	</body>
+</html>
