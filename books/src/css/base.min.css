@@ -1,0 +1,8 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+/** @import "iconfont.css";.clearFix::after{content:'';clear:both;display:block;visibility:hidden;width:0;height:0}.clearFix{zoom:1}.animateload{-webkit-animation:loadanimation 1.5s;animation:loadanimation 1.5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;-webkit-animation-direction:alternate;animation-direction:alternate}@-webkit-keyframes loadanimation{0%{opacity:0}40%{opacity:0}100%{opacity:1}}@keyframes loadanimation{0%{opacity:0}40%{opacity:0}100%{opacity:1}}@-webkit-keyframes nextbutanimation{from{top:20%;opacity:1}to{top:60%;opacity:0}}@keyframes nextbutanimation{from{top:20%;opacity:1}to{top:60%;opacity:0}}@-webkit-keyframes typing{from{width:0}}@keyframes typing{from{width:0}}@-webkit-keyframes blink-caret{50%{border-color:transparent}}@keyframes blink-caret{50%{border-color:transparent}}#wrap{position:relative;background-image:url("../../src/img/bg.jpg");background-repeat:no-repeat;background-attachment:fixed;background-position:center;background-size:cover;background-size:100% 100%}#wrap .page{min-height:100vh;position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-flow:column;flex-flow:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:white}#wrap .page .page-title{color:#ff4a57;text-align:center;font-weight:bold;margin:20px 0}#wrap .page1{text-align:center}@media screen and (max-height:600px)

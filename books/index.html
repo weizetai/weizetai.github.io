@@ -152,6 +152,13 @@
         </a>
       </li>
       
+      <li>
+        <a target="_blank" rel="noopener" href="https://juejin.cn/post/7016593221815910408">
+          
+          <span>前端八股文</span>
+        </a>
+      </li>
+      
     </ul>
     
   </li>
@@ -282,6 +289,15 @@
           <i class="fas fa-duotone fa-clock" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>滚动时钟</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/resume">
+          
+          <i class="fas fa-duotone fa-clock" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>个人简历</span>
         </a>
       </li>
       
@@ -461,6 +477,14 @@
                   </a>
                 </li>
               
+                <li>
+
+                  <a target="_blank" rel="noopener" href="https://juejin.cn/post/7016593221815910408 " style="margin-left:75px">
+				  
+		          <span>前端八股文</span>
+                  </a>
+                </li>
+              
             </ul>
           
         </li>
@@ -605,6 +629,16 @@
                   </a>
                 </li>
               
+                <li>
+
+                  <a href="/resume " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-duotone fa-clock" style="position: absolute;left:50px" ></i>
+			      
+		          <span>个人简历</span>
+                  </a>
+                </li>
+              
             </ul>
           
         </li>
@@ -729,24 +763,261 @@
 
 </header>
 
-    
-<!-- <style>
-  .content {
-    height: 100vh;
-    width: 100%;
-  } -->
-
-  <!-- .box {
-    height: 100%;
-    width: 100%;
-    background: url() no-repeat center;
-        background-size: cover;
-        /* background-color: black; */
-        /* background-image: url(../source/medias/banner/10.jpg); */
+    <style type="text/css">
+  /* don't remove. */
+  .bg-cover {
+      height: 100vh;
   }
-</style> -->
-<main class="content">
+  .page-footer{
+    position: fixed;
 
+  }
+
+</style>
+
+<main class="content">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+        <style>
+  body {
+    height: 100%;
+    font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  h2 {
+    margin: 0;
+    font-size: 12px;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  input {
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+  }
+  button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    outline: 0;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .page-top {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  .goBack {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    line-height: 40px;
+    padding-left: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .goBack i {
+    width: 20px;
+    line-height: 40px;
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  .goBack h2 {
+    flex: 1;
+    font-size: 18px;
+  }
+  .page-content {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .page-content h2 {
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .main {
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .task-input {
+    width: 99%;
+    height: 30px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .task-count {
+    display: flex;
+    margin: 10px 0;
+  }
+  .task-count li {
+    padding-left: 10px;
+    flex: 1;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .task-count li:nth-child(1) {
+    padding: 5px 0 0 10px;
+  }
+  .action {
+    text-align: center;
+    display: flex;
+  }
+  .action a {
+    margin: 0 10px;
+    flex: 1;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .action a:nth-child(3) {
+    margin-right: 0;
+  }
+  .active {
+    border-bottom: 2px solid white;
+  }
+  .tasks {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .no-task-tip {
+    padding: 10px 0 10px 10px;
+    display: block;
+    border-bottom: 1px solid black;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .big-title {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .todo-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .todo-list li {
+    position: relative;
+    font-size: 16px;
+    border-radius: 10px;
+    color: white;
+    border-left: 5px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+    margin-bottom: 16px;
+  }
+  .todo-list li:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .todo-list li.editing {
+    border-bottom: 0;
+    padding: 0;
+  }
+  .todo-list li.editing .edit {
+    display: block;
+    padding: 13px 17px 12px 17px;
+    margin: 0 0 0 43px;
+  }
+  .todo-list li.editing .view {
+    display: none;
+  }
+  .toggle {
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    bottom: 0;
+    margin: auto 0;
+    cursor: pointer;
+  }
+  .todo-list li label {
+    white-space: pre-line;
+    word-break: break-all;
+    padding: 15px 60px 15px 15px;
+    margin-left: 45px;
+    display: block;
+    line-height: 1.2;
+    transition: color 0.4s;
+  }
+  .todo-list li.completed label {
+    color: #d9d9d9;
+    text-decoration: line-through;
+  }
+  .todo-list li .destroy {
+    display: none;
+    text-align: center;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 10px;
+    margin: auto 0;
+    cursor: pointer;
+    font-size: 28px;
+    color: #cc9a9a;
+    transition: color 0.2s ease-out;
+  }
+  .todo-list li .destroy:hover {
+    color: #af5b5e;
+  }
+  .todo-list li .destroy:after {
+    content: "×";
+  }
+  .todo-list li:hover .destroy {
+    display: block;
+  }
+  .todo-list li .edit {
+    display: none;
+  }
+  .todo-list li.editing:last-child {
+    margin-bottom: -1px;
+  }
+</style>
+
+<div class="wztCount">
+  
+</div>
+
+        
+
+        <!-- 壁纸切换 -->
+        
+        <script>
+            // 每天切换 banner 图.  Switch banner image every day.    getDay() 获取0~6对应0~6的图片名
+            // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+        
+            // 每小时切换 banner 图.   8张图   故需要轮换三次  %9
+            // var bannerUrl = "/medias/banner/" + new Date().getHours()%9 + '.jpg';
+            // 每分钟切换 banner 图.   6张图   故需要轮换10次  %6
+            // var bannerUrl = "";
+            setInterval(function(){
+                var bannerUrl = "/medias/banner/" + new Date().getMinutes()%30 + '.jpg';
+                $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+                bannerUrl = "";
+            },1000)
+        </script>
+        
+        
+    </div>
+</div>
+   
 </main>
 
     <footer class="page-footer bg-color">
@@ -766,7 +1037,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">15.2k</span>
+                class="white-color">23.7k</span>
             
             
             
