@@ -271,11 +271,11 @@
       </li>
       
       <li>
-        <a href="/contact">
+        <a href="/wztTime">
           
-          <i class="fas fa-comments" style="margin-top: -20px; zoom: 0.6;"></i>
+          <i class="fas fa-duotone fa-clock" style="margin-top: -20px; zoom: 0.6;"></i>
           
-          <span>留言中心</span>
+          <span>滚动时钟</span>
         </a>
       </li>
       
@@ -298,20 +298,20 @@
       </li>
       
       <li>
-        <a href="/wztTime">
-          
-          <i class="fas fa-duotone fa-clock" style="margin-top: -20px; zoom: 0.6;"></i>
-          
-          <span>滚动时钟</span>
-        </a>
-      </li>
-      
-      <li>
         <a href="/todolistHeox">
           
           <i class="fas fa-duotone fa-rectangle-list" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>任务列表</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/contact">
+          
+          <i class="fas fa-comments" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>留言中心</span>
         </a>
       </li>
       
@@ -630,11 +630,11 @@
               
                 <li>
 
-                  <a href="/contact " style="margin-left:75px">
+                  <a href="/wztTime " style="margin-left:75px">
 				  
-				   <i class="fa fas fa-comments" style="position: absolute;left:50px" ></i>
+				   <i class="fa fas fa-duotone fa-clock" style="position: absolute;left:50px" ></i>
 			      
-		          <span>留言中心</span>
+		          <span>滚动时钟</span>
                   </a>
                 </li>
               
@@ -660,21 +660,21 @@
               
                 <li>
 
-                  <a href="/wztTime " style="margin-left:75px">
-				  
-				   <i class="fa fas fa-duotone fa-clock" style="position: absolute;left:50px" ></i>
-			      
-		          <span>滚动时钟</span>
-                  </a>
-                </li>
-              
-                <li>
-
                   <a href="/todolistHeox " style="margin-left:75px">
 				  
 				   <i class="fa fas fa-duotone fa-rectangle-list" style="position: absolute;left:50px" ></i>
 			      
 		          <span>任务列表</span>
+                  </a>
+                </li>
+              
+                <li>
+
+                  <a href="/contact " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-comments" style="position: absolute;left:50px" ></i>
+			      
+		          <span>留言中心</span>
                   </a>
                 </li>
               
@@ -819,7 +819,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>vueStudy</title>
-  <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+  <!-- 引入样式 -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+
 </head>
 <style>
   .bg-cover {
@@ -835,6 +840,7 @@
   }
 </style>
 <body>
+  <input type="checkbox" />
   <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
@@ -892,11 +898,19 @@
     </div>
 </div>
   <main class="content">
+    <input class="wztinput" type="checkbox" placeholder="wztttttt">
     <div id="app">
       <h1 :style="{fontSize:num + 'px', color: color}" @click="change()">{{name}}</h1>
-    </div>
+      
+      <label class="checkbox inline">
+        <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+      </label>
+    
+    
   </main>
 </body>
+<!-- 引入组件库 -->
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
 <script>
   const vm = new Vue({
     el: '#app',
@@ -919,6 +933,8 @@
       }, 60)
     }
   })
+
+
 </script>
 </html>
 
@@ -939,7 +955,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">29.3k</span>
+                class="white-color">41.5k</span>
             
             
             
