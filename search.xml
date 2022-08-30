@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>内容管理项目</title>
+      <link href="/2022/08/29/8-29%20%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE/"/>
+      <url>/2022/08/29/8-29%20%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86%E9%A1%B9%E7%9B%AE/</url>
+      
+        <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a></h2><h1 id="内容管理项目"><a href="#内容管理项目" class="headerlink" title="内容管理项目"></a>内容管理项目</h1><h2 id="项目开发"><a href="#项目开发" class="headerlink" title="项目开发"></a>项目开发</h2><h3 id="项目开发流程"><a href="#项目开发流程" class="headerlink" title="项目开发流程"></a>项目开发流程</h3><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\1.png" alt="项目开发总体流程"></p><h3 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h3><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\2.png" alt="技术选型"></p><h3 id="系统框架"><a href="#系统框架" class="headerlink" title="系统框架"></a>系统框架</h3><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\3.png" alt="系统框架"></p><ul><li>使用nunjucks模板渲染的原因</li></ul><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\4.png" alt="SEO"></p><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\5.png" alt="数据库"></p><h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><h4 id="后端egg-目录结构"><a href="#后端egg-目录结构" class="headerlink" title="后端egg 目录结构"></a>后端egg 目录结构</h4><p>路由 <code>server/app/router.js</code></p><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\11.png" alt="路由"></p><p>view 装模板</p><ul><li>admin<ul><li>index.html(vue生成的单页面应用)相应的静态文件（CSS, JS）放置与<code>app/public</code></li></ul></li><li>pc<ul><li>.html (pc端的模板文件)</li></ul></li><li>phone<ul><li><code>.html</code>（手机端的模板文件）</li></ul></li></ul><p><code>controller</code>控制器</p><p><code>middleware</code></p><ul><li><code>checktoken.js</code> 检测登录（token）的中间件</li></ul><p>model模型目录</p><ul><li><code>.js</code> 数据模型</li></ul><p><code>public</code>  静态文件目录</p><h4 id="前端目录结构"><a href="#前端目录结构" class="headerlink" title="前端目录结构"></a>前端目录结构</h4><h5 id="后台管理前端vue程序目录结构"><a href="#后台管理前端vue程序目录结构" class="headerlink" title="后台管理前端vue程序目录结构"></a>后台管理前端vue程序目录结构</h5><p><code>src</code>文件夹</p><p>路由</p><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\12.png" alt="路由"></p><p>view 存放组件</p><p>​.vue 不同的页面切换</p><p>components</p><p>​.vue 详情页</p><h2 id="项目启动"><a href="#项目启动" class="headerlink" title="项目启动"></a>项目启动</h2><ol><li><p>启动项目之前，先按下面第四节的内容，在mysql数据库中创建xiaozhoucms数据库。</p><ol><li><p>启动终端</p></li><li><p>输入 <code>mysql -u root -p</code>启动mysql数据库（若找不到命令，需将路径添加到系统环境变量）</p><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\7.png" alt="添加环境变量"></p></li><li><p>创建数据库</p><ul><li><code>create database xiaozhoucms default character set utf8mb4 collate utf8mb4_unicode_ci;</code></li><li>进入数据库<code>use xiaozhoucms </code></li></ul></li></ol></li><li><p>在server目录中使用<code>npm install</code>下载依赖，然后执行<code>npm run dev</code>即可启动项目（启动前请先创建数据库）</p></li><li><p>修改项目配置文件</p><ul><li><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\6.png" alt="配置文件修改"><ul><li>找到<code>config/config.default.js</code></li><li>将数据库名<code>database</code>改为自己创建的数据库</li><li>设置用户名</li><li>设置密码</li></ul></li></ul></li><li><p>启动数据库，创建管理员用户</p><ul><li><p>打开可视化界面</p><p>​<img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\8.png" alt="启动"></p></li><li><p>链接创建好的数据库</p><p><img src="E:\05前端学习\个人博客\wztBlog2.0\source\images\8-29\项目开发流程\9.png" alt="链接数据库"></p></li><li><p>右键选择第一项添加 <code>username; password; created_at; updated_at</code>即可</p><pre class="line-numbers language-mysql"><code class="language-mysql">所有数据表会自动创建，然后使用下面语句创建管理员用户。insert into users (    username,    password,    created_at,    updated_at) values (    "admin",    "e10adc3949ba59abbe56e057f20f883e",    "2022-08-29",    "2022-08-29");-- 管理员用户名为admin，密码使用md5加密，所以初始值设置为‘123456’的加密字符串。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul></li><li><p>在client目录中使用<code>npm install</code>下载依赖，然后执行<code>npm run serve</code>即可启动项目</p></li><li><p>访问<a href="http://127.0.0.1:8080/#/login%E5%8F%AF%E4%BB%A5%E8%BF%9B%E5%85%A5%E5%90%8E%E5%8F%B0%E7%99%BB%E5%BD%95%E9%A1%B5%E9%9D%A2">http://127.0.0.1:8080/#/login可以进入后台登录页面</a></p></li><li><p>访问<a href="http://127.0.0.1:7001/%E5%8F%AF%E4%BB%A5%E6%89%93%E5%BC%80%E5%89%8D%E7%AB%AF%E5%B1%95%E7%A4%BA%E9%A1%B5%E3%80%82">http://127.0.0.1:7001/可以打开前端展示页。</a></p></li></ol><h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><ul><li>docs：项目开发的相关文档</li><li>server：项目服务器端（基于node，egg，mysql）</li><li>client：项目前端（基于vue）</li><li>example：以项目为基础拆分的小案例，每一个demo都是一个项目，</li><li>example&#x2F;demo_module_backup：是一个基础项目备份，大家可以直接拷贝过去，然后在此基础上去开发，这样可以省去vue和egg项目初始化的过程。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 内容管理项目 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>面经-前端八股文</title>
       <link href="/2022/08/24/%E9%9D%A2%E7%BB%8F-%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/"/>
       <url>/2022/08/24/%E9%9D%A2%E7%BB%8F-%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/</url>
