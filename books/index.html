@@ -100,7 +100,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/friends" class="waves-effect waves-light">
+    <a href="/wztJob" class="waves-effect waves-light">
 
       
       <i class="fas fa-light fa-paperclip" style="zoom: 0.6;"></i>
@@ -163,6 +163,13 @@
         <a target="_blank" rel="noopener" href="https://www.zhaopin.com/">
           
           <span>智联招聘</span>
+        </a>
+      </li>
+      
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.liepin.com/campus/?t=1">
+          
+          <span>猎聘</span>
         </a>
       </li>
       
@@ -265,7 +272,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="" class="waves-effect waves-light">
+    <a href="/project" class="waves-effect waves-light">
 
       
       <i class="fas fa-duotone fa-box-open" style="zoom: 0.6;"></i>
@@ -335,6 +342,15 @@
           <i class="fas fa-solid fa-diamond-turn-right" style="margin-top: -20px; zoom: 0.6;"></i>
           
           <span>vue学习</span>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/project">
+          
+          <i class="fas fa-solid fa-diamond-turn-right" style="margin-top: -20px; zoom: 0.6;"></i>
+          
+          <span>个人项目</span>
         </a>
       </li>
       
@@ -532,6 +548,14 @@
               
                 <li>
 
+                  <a target="_blank" rel="noopener" href="https://www.liepin.com/campus/?t=1 " style="margin-left:75px">
+				  
+		          <span>猎聘</span>
+                  </a>
+                </li>
+              
+                <li>
+
                   <a target="_blank" rel="noopener" href="https://juejin.cn/post/7016593221815910408 " style="margin-left:75px">
 				  
 		          <span>前端八股文</span>
@@ -718,6 +742,16 @@
                   </a>
                 </li>
               
+                <li>
+
+                  <a href="/project " style="margin-left:75px">
+				  
+				   <i class="fa fas fa-solid fa-diamond-turn-right" style="position: absolute;left:50px" ></i>
+			      
+		          <span>个人项目</span>
+                  </a>
+                </li>
+              
             </ul>
           
         </li>
@@ -842,31 +876,71 @@
 
 </header>
 
-    <style type="text/css">
-  /* don't remove. */
+    <style>
   .bg-cover {
-      height: 100vh;
+  height: 100vh;
   }
   .page-footer{
     position: fixed;
 
   }
-  
 </style>
-<script src="../../../source/vue.js/vue.js"></script>
-<main>
-    <!-- 
-    <h1>wzt</h1>
-    <div id="app">{{message}}</div>
-    <script>
-      var app = new Vue({
-        el: '#app',
-        data: {
-          message: 'hello'
-        }
-      })
-    </script> -->
-</main>
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                 
+                
+            </div>
+
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="/libs/typed/typed.js"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "从来没有真正的绝境, 只有心灵的迷途",
+                            
+                                "Never really desperate, only the lost of the soul",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.    getDay() 获取0~6对应0~6的图片名
+    // var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+
+    // 每小时切换 banner 图.   8张图   故需要轮换三次  %9
+    // var bannerUrl = "/medias/banner/" + new Date().getHours()%9 + '.jpg';
+    // 每分钟切换 banner 图.   6张图   故需要轮换10次  %6
+    // var bannerUrl = "";
+    setInterval(function(){
+        var bannerUrl = "/medias/banner/" + new Date().getMinutes()%30 + '.jpg';
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+        bannerUrl = "";
+	},1000)
+</script>
+
+
+    </div>
+</div>
 
 
     <footer class="page-footer bg-color">
