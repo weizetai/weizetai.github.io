@@ -971,7 +971,7 @@
       </label>
       <br>
       <button-counter></button-counter>
-      <!-- <HelloWord /> -->
+      
     </div>
       
     
@@ -983,12 +983,15 @@
 <script>
 
   // 按钮点击组件
-  Vue.component('button-counter', { // 声明一个组件
-    data(){
-      return { count: 0 };
-    },
-    template: '<Button v-on:click="count++">点击了{{ count }}次</Button>'
-  });
+  // 按钮点击组件
+Vue.component('button-counter', { // 声明一个组件
+  data(){
+    return { count: 0 };
+  },
+  template: '<Button v-on:click="count++">点击了{{ count }}次</Button>'
+});;
+
+
 
   const vm = new Vue({
     el: '#app',
@@ -1036,7 +1039,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">43.6k</span>
+                class="white-color">47.5k</span>
             
             
             
